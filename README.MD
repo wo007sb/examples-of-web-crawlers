@@ -1,16 +1,18 @@
-# <p align="center">一些python爬虫例子,对新手比较友好</p>
+# <p align="center">一些非常有趣的python爬虫例子,对新手比较友好</p>
 
 
 <p align="center">
     <a href="https://github.com/shengqiangzhang/examples-of-web-crawlers"><img src="https://img.shields.io/badge/status-updating-brightgreen.svg"></a>
     <a href="https://github.com/python/cpython"><img src="https://img.shields.io/badge/Python-3.7-FF1493.svg"></a>
-    <a href="https://github.com/shengqiangzhang/examples-of-web-crawlers"><img src="https://img.shields.io/badge/platform-Windows%7CLinux%7CmacOS-660066.svg"></a>
     <a href="https://opensource.org/licenses/mit-license.php"><img src="https://badges.frapsoft.com/os/mit/mit.svg"></a>
+    <a href="https://github.com/shengqiangzhang/examples-of-web-crawlers"><img src="https://img.shields.io/github/repo-size/shengqiangzhang/examples-of-web-crawlers"></a>
+    <a href="https://github.com/shengqiangzhang/examples-of-web-crawlers/graphs/contributors"><img src="https://img.shields.io/github/contributors/shengqiangzhang/examples-of-web-crawlers?color=blue"></a>
     <a href="https://github.com/shengqiangzhang/examples-of-web-crawlers/stargazers"><img src="https://img.shields.io/github/stars/shengqiangzhang/examples-of-web-crawlers.svg?logo=github"></a>
     <a href="https://github.com/shengqiangzhang/examples-of-web-crawlers/network/members"><img src="https://img.shields.io/github/forks/shengqiangzhang/examples-of-web-crawlers.svg?color=blue&logo=github"></a>
     <a href="https://www.python.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" align="right" height="48" width="48" ></a>
 </p>
 <br />
+
 
 ## 简介
 一些常见的网站爬虫例子，代码通用性较高，时效性较久。**项目代码对新手比较友好**，尽量用简单的python代码，并配有大量注释。
@@ -397,6 +399,114 @@ python main.py
 ```
 
 
+<br />
+<br />
+
+
+
+## [10.一键生成个人微信朋友圈数据电子书][generate_friend_group_data]
+
+
+### 简介
+
+微信朋友圈保留着你的数据，它留住了美好的回忆，记录了我们成长的点点滴滴。发朋友圈从某种意义上来讲是在记录生活，感受生活，并从中看到了每个人每一步的成长。
+
+这么一份珍贵的记忆，何不将它保存下来呢？只需一杯咖啡的时间，即可一键打印你的朋友圈。它可以是纸质书，也可以是电子书，可以长久保存，比洗照片好，又有时间足迹记忆。
+
+- 这本书，可以用来：
+- 送给孩子的生日礼物
+- 送给伴侣的生日礼物
+- 送给未来的自己
+- ……
+
+现在，你可以选择打印电子书或者纸质书。打印纸质书的话，可以找第三方机构花钱购买；**打印电子书的话，我们完全可以自己动手生成，这可以省下一笔不小的开支**。
+
+
+
+### 功能截图
+
+在开始写代码思路之前，我们先看看最终生成的效果。
+
+### 电子书效果(图片引用自[出书啦](https://chushu.la/))
+![](10.一键生成个人微信朋友圈数据电子书/image/page1.png)
+![](10.一键生成个人微信朋友圈数据电子书/image/page2.png)
+
+### 纸质书效果(图片引用自[心书](https://weixinshu.com/library/unboxing))
+![](10.一键生成个人微信朋友圈数据电子书/image/page3.jpeg)
+
+
+### 如何运行
+```bash
+# 跳转到当前目录
+cd 目录名
+# 先卸载依赖库
+pip uninstall -y -r requirement.txt
+# 再重新安装依赖库
+pip install -r requirement.txt
+# 开始运行
+python main.py
+```
+
+
+<br />
+<br />
+
+
+
+
+## [11.一键分析你的上网行为(web页面可视化)][chrome_history_data]
+
+
+### 简介
+
+**想看看你最近一年都在干嘛？看看你平时上网是在摸鱼还是认真工作？想写年度汇报总结，但是苦于没有数据？现在，它来了。**
+
+这是一个能让你了解自己的浏览历史的Chrome浏览历史记录分析程序，**他适用于Chrome浏览器或者以Chromium为内核的浏览器。目前国内大部分浏览器均是以Chromium为内核的浏览器，所以基本上都可以使用。但是不支持以下浏览器：IE浏览器、Firefox浏览器、Safari浏览器。**
+
+在该页面中你将可以查看有关自己在过去的时间里所访问浏览的域名、URL以及忙碌天数的前十排名以及相关的数据图表。
+
+
+### 功能截图
+
+在开始写代码思路之前，我们先看看最终生成的效果。
+
+![](11.一键分析你的上网行为(web页面可视化)/demo.gif)
+
+
+### 如何运行
+
+在线演示程序:[http://39.106.118.77:8090](http://39.106.118.77:8090)(普通服务器，勿测压)
+
+运行本程序十分简单，只需要按照以下命令即可运行：
+
+```bash
+# 跳转到当前目录
+cd 目录名
+# 先卸载依赖库
+pip uninstall -y -r requirement.txt
+# 再重新安装依赖库
+pip install -r requirement.txt
+# 开始运行
+python app.py
+
+# 运行成功后，通过浏览器打开http://localhost:8090
+```
+
+
+
+<br />
+<br />
+
+## 如何下载
+
+本仓库大小为<a href="https://github.com/shengqiangzhang/examples-of-web-crawlers"><img src="https://img.shields.io/github/repo-size/shengqiangzhang/examples-of-web-crawlers"></a>, 为提高下载速度, 建议使用代理服务器下载。
+
+<br />
+
+没有或不懂如何设置代理服务器的![chinese_flag](./chinese_flag.png)**中国用户**, 请跳转至本仓库同步镜像[码云Gitee](https://gitee.com/shengqiangzhang/examples-of-web-crawlers)进行下载, 以便获得较快的下载速度。
+
+
+
 
 
 <br />
@@ -434,6 +544,11 @@ python main.py
 [generate_wx_data]:https://github.com/shengqiangzhang/examples-of-web-crawlers/tree/master/8.%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%E5%BE%AE%E4%BF%A1%E4%B8%AA%E4%BA%BA%E4%B8%93%E5%B1%9E%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%91%8A(%E4%BA%86%E8%A7%A3%E4%BD%A0%E7%9A%84%E5%BE%AE%E4%BF%A1%E7%A4%BE%E4%BA%A4%E5%8E%86%E5%8F%B2)
 
 [generate_qq_data]:https://github.com/shengqiangzhang/examples-of-web-crawlers/tree/master/9.%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90QQ%E4%B8%AA%E4%BA%BA%E5%8E%86%E5%8F%B2%E6%8A%A5%E5%91%8A
+
+[generate_friend_group_data]:https://github.com/shengqiangzhang/examples-of-web-crawlers/tree/master/10.%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1%E6%9C%8B%E5%8F%8B%E5%9C%88%E6%95%B0%E6%8D%AE%E7%94%B5%E5%AD%90%E4%B9%A6
+
+[chrome_history_data]:https://github.com/shengqiangzhang/examples-of-web-crawlers/tree/master/11.%E4%B8%80%E9%94%AE%E5%88%86%E6%9E%90%E4%BD%A0%E7%9A%84%E4%B8%8A%E7%BD%91%E8%A1%8C%E4%B8%BA(web%E9%A1%B5%E9%9D%A2%E5%8F%AF%E8%A7%86%E5%8C%96)
+
 
 [1]:https://www.google.com/chrome/
 [2]:http://chromedriver.storage.googleapis.com/index.html
